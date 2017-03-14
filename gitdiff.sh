@@ -14,5 +14,7 @@ cp $2 ./git/$1
 git add .
 git commit -m "second"
 
-git diff
+cd ./git
+git diff >> gitdiff
+cd ..
 
