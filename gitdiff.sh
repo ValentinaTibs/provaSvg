@@ -11,10 +11,9 @@ git commit -m "first"
 rm $1
 
 cp $2 ./git/$1
-git add .
-git commit -m "second"
 
 cd ./git
-git diff >> gitdiff
+git diff >> ../$3
 cd ..
+#rm -rf ./git
 
