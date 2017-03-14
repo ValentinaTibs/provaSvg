@@ -8,7 +8,8 @@ git init
 cp $1 ./git/$1
 git add .
 git commit -m "first"
-rm ./git/$1
+git remote add origin git@github.com:ValentinaTibs/provaSvg.git
+git push -u origin master
 
 cp $2 ./git/$1
 
